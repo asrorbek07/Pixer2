@@ -1,0 +1,30 @@
+/*CUSTOM PROPERTIES*/
+:root{
+    /*Site Colors*/
+    --text-color:#191919;
+    --accent-color:#00bafc;
+    /*Site Fonts*/
+    --font-family:"Open Sans","Arial", sans-serif;
+}
+
+/*WEB FONTS RELATED*/
+
+
+/*GLOBAL STYLES*/
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #191919;
+}
