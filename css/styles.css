@@ -2,13 +2,30 @@
 :root{
     /*Site Colors*/
     --text-color:#191919;
+    --color-white:#ffffff;
     --accent-color:#00bafc;
     /*Site Fonts*/
     --font-family:"Open Sans","Arial", sans-serif;
 }
 
 /*WEB FONTS RELATED*/
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+        url("../fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+        url("../fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /*GLOBAL STYLES*/
 html{
@@ -22,9 +39,9 @@ html{
 }
 
 body{
-    font-family: sans-serif;
+    font-family: var(--font-family);
     font-size: 16px;
     line-height: 1.5;
-    background-color: #fff;
-    color: #191919;
+    background-color:var(--color-white);
+    color: var(--text-color);
 }
