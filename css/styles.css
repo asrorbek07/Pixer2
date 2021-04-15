@@ -38,12 +38,11 @@ html{
     box-sizing: inherit;
 }
 .container{
-    width: 1300px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 100px;
     padding-right: 100px;
-    border:1px solid red;
 }
 
 body{
@@ -52,4 +51,121 @@ body{
     line-height: 1.5;
     background-color:var(--color-white);
     color: var(--text-color);
+}
+.btn{
+    padding: 8px 16px;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* CITE HEADER */
+
+.cite-header{
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.cite-header__container{
+    display: flex;
+    align-items: center;
+}
+.logo:hover{
+    opacity: 0.8;
+}
+.logo:active{
+    opacity: 0.4;
+}
+
+.logo-img{
+    display: block;
+}
+.cite-header__logo{
+    margin-right: auto;
+}
+.site-header__phone{
+    margin-left: 8px;
+}
+/* CITENAV */
+.citenav__list{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.citenav__item{
+    position: relative;
+    
+}
+.citenav__item:hover .dropdown__menu{
+    display: block;
+}
+.citenav__link{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 16px;
+    transition: box-shadow, background-color 0.3s ease;
+}
+.citenav__link:hover,
+.citenav__item--active .citenav__link {
+    box-shadow: inset 0 -3px 0 0 var(--text-color);
+}
+.citenav__link:active{
+    background-color: rgba(25, 25, 25, 0.7);
+    box-shadow: none;
+    color: var(--color-white);
+}
+/* DROPDOWN MENU */
+.dropdown__menu{
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    border-radius: 5px;
+    padding-bottom: 8px;
+    list-style: none;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    z-index: 10;
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+
+}
+.dropdown__link{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    white-space: nowrap;
+    padding: 8px 16px;
+    transition: all 0.1s ease-in;
+}
+.dropdown__link:hover{
+    background-color: var(--accent-color);
+    color: var(--color-white);
+}
+.dropdown__link:active{
+    opacity: 0.6;
+}
+/* DROPDOWN HEADER */
+
+
+/* CITENAV */
+.btn-phone{
+    background-color: var(--accent-color);
+    color: var(--color-white);
+    padding: 5px 13px;
+    border: 3px solid transparent;
+}
+.btn-phone:hover{
+    background-color: var(--color-white);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+.btn-phone:active{
+    background-color: var(--accent-color);
+    color: var(--color-white);
+    opacity: 0.6;
 }
