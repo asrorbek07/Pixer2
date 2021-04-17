@@ -252,7 +252,7 @@ body{
 .hero-video{
     width: 460px;
     height: 260px;
-    
+    border-radius: 5px;
 }
 
 
