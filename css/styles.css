@@ -517,6 +517,28 @@ a{
 .site-footer__link:last-child{
     margin-bottom: 0;
 }
+.social-link{
+    display: flex;
+    align-items: center;
+}
+.social-link::before{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 8px;
+}
+.social-telegramm::before{
+    background-image: url(../images/icon-telegram.png);
+}
+.social-facebook::before{
+    background-image: url(../images/icon-facebook.png);
+}
+.social-instagram::before{
+    background-image: url(../images/icon-instagram.png);
+}
 
 
 
